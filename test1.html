@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+</head>
+<body>
+    <h2>Sign Up Page</h2>
+    <form action="onsubmit" name="MyForms" onchange="validate()">
+    <label for="username">Enter Username: </label>
+    <input type="text" name="username" id="username" class="form-contol form-control-sm" placeholder="Username" required>
+    <label for="password">Enter password: </label>
+    <input type="password" name="password" id="password" class="form-contol form-control-sm" placeholder="Password" required>
+
+    <button class="btn">Submit</button>
+    </form>
+    
+</body>
+<script>
+    function Validate(){
+        var username = document.forms["MyForms"]["username"].value;
+        var password = document.forms["MyForms"]["password"].value;
+
+        if(username==" " || password==" "){
+            alert("Insert required fields");
+        }
+        else{
+            
+        }
+    }
+</script>
+</html>
